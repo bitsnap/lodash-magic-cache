@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": { "node": true },
+      "exclude": ["transform-regenerator"]
+    }]
+  ],
+
+  "plugins": [
+    ["module-resolver", {
+      "root": [
+        "src",
+        "test"
+      ]
+    }]
+  ]
+}

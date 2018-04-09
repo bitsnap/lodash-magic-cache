@@ -1,0 +1,13 @@
+.DS_Store
+
+node_modules/
+
+.nyc*
+coverage
+.vscode
+
+here
+.babelrc-test
+
+*.lock
+*.log

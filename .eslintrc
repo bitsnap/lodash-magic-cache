@@ -1,0 +1,31 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "plugins": [
+    "lodash-fp",
+    "unicorn"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 5
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "plugin:lodash-fp/recommended",
+    "plugin:unicorn/recommended"
+  ],
+  "rules": {
+    "no-underscore-dangle": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "unicorn/no-fn-reference-in-iterator": "off",
+    "lodash-fp/no-submodule-destructuring": "off"
+  }
+}
