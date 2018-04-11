@@ -49,7 +49,11 @@ It's much faster on Node.js with a dedicated `_.memoize` powered cache.
 
 `lodash-magic-cache` makes sense when you're targeting plain node.js, or using `babel` with [lodash-magic-import](https://github.com/bitsnap/babel-plugin-lodash-magic-import).
 
-It's completely pointless with a bundle like [webpack](https://webpack.js.org/) or [rollup](https://rollupjs.org), because they've already using similar technique.
+It's completely pointless with a bundler like [webpack](https://webpack.js.org/) or [rollup](https://rollupjs.org), because they've already using similar caching technique.
+
+### Q&A
+
+Feel free to ask some questions [via Discord](http://discord.gg/P7W9v9B).
 
 ## License
 
