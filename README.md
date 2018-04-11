@@ -1,5 +1,7 @@
 # lodash-magic-cache
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bitsnap/lodash-magic-cache.svg)](https://greenkeeper.io/)
+
 [![npmjs](https://img.shields.io/npm/v/lodash-magic-cache.svg)](https://npmjs.org/package/lodash-magic-cache)
 [![downloads](https://img.shields.io/npm/dw/lodash-magic-cache.svg)](https://npmjs.org/package/lodash-magic-cache)
 [![CircleCI](https://img.shields.io/circleci/project/github/bitsnap/lodash-magic-cache.svg)](https://circleci.com/gh/bitsnap/lodash-magic-cache)
