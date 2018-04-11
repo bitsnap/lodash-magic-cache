@@ -1,14 +1,11 @@
 # lodash-magic-cache
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/bitsnap/lodash-magic-cache.svg)](https://greenkeeper.io/)
-
 [![npmjs](https://img.shields.io/npm/v/lodash-magic-cache.svg)](https://npmjs.org/package/lodash-magic-cache)
 [![downloads](https://img.shields.io/npm/dw/lodash-magic-cache.svg)](https://npmjs.org/package/lodash-magic-cache)
 [![CircleCI](https://img.shields.io/circleci/project/github/bitsnap/lodash-magic-cache.svg)](https://circleci.com/gh/bitsnap/lodash-magic-cache)
 [![Coverage Status](https://coveralls.io/repos/github/bitsnap/lodash-magic-cache/badge.svg?branch=master)](https://coveralls.io/github/bitsnap/lodash-magic-cache?branch=master) 
-[![dependencies](https://david-dm.org/bitsnap/lodash-magic-cache.svg)](https://david-dm.org/bitsnap/lodash-magic-cache)
 [![devDependencies](https://david-dm.org/bitsnap/lodash-magic-cache/dev-status.svg)](https://david-dm.org/bitsnap/lodash-magic-cache#info=devDependencies)
-[![Known Vulnerabilities](https://snyk.io/test/github/bitsnap/lodash-magic-cache/badge.svg)](https://snyk.io/test/github/bitsnap/lodash-magic-cache)
 
 Magic cache 🍒 caches your lodash 📦 at Node.js for you.
 
