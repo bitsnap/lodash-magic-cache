@@ -1,22 +1,26 @@
 import test from 'tape';
 
 import _keys from 'lodash/fp/keys';
+import _isFunction from 'lodash/fp/isFunction';
 
-import MagicCache from 'cache';
-import cache from 'main';
+import cache from 'cache';
 
 const _ = {
   keys: _keys,
+  isFunction: _isFunction,
 };
 
-test('Should use default exports with sepate caches for lodash and lodash/fp', (t) => {
-  MagicCache.clear();
-  MagicCache.clear(true);
+test('Should work both for lodash and lodash/fp', (t) => {
+  t.plan(8);
 
-  t.plan(4);
-  t.ok(cache.lodash('keys'));
-  t.deepEqual(_.keys(MagicCache.modules()), ['keys']);
+  const check = (fp) => {
+    cache.clear();
+    t.ok(cache.get('keys'), fp);
+    t.ok(cache.has('keys'), fp);
+    t.ok(_.isFunction(cache.get('keys', fp).keys));
+    t.deepEqual(cache.get('keys', fp).keys({ a: '', b: '' }), ['a', 'b']);
+  };
 
-  t.ok(cache.fp('map'));
-  t.deepEqual(_.keys(MagicCache.modules(true)), ['map']);
+  check();
+  check(true);
 });

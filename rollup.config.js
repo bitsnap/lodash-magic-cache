@@ -33,6 +33,11 @@ export default {
     'lodash/fp/isArray',
     'lodash/fp/isString',
     'lodash/fp/map',
+    'lodash/fp/flow',
+    'lodash/fp/filter',
+    'lodash/fp/startsWith',
+    'lodash/fp/replace',
+    'lodash/fp/fromPairs',
   ],
   output: [{
     file: 'dist/lodash-magic-cache.min.js',

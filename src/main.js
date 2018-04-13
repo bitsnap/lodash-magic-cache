@@ -1,11 +1,11 @@
-import MagicCache from 'cache';
+import cache from 'cache';
 
 export default {
   lodash(modules) {
-    return MagicCache.get(modules, false);
+    return cache.get(modules, false);
   },
 
   fp(modules) {
-    return MagicCache.get(modules, true);
+    return cache.get(modules, true);
   },
 };
