@@ -5,7 +5,7 @@ export default {
     return cache.get(modules, false);
   },
 
-  fp(modules) {
+  lodashFP(modules) {
     return cache.get(modules, true);
   },
 };

@@ -28,13 +28,9 @@ const _ = require('lodash-magic-cache').lodash([
 or 
 
 ```js
-const _cache =  require('lodash-magic-cache').fp;
-
-const _ = {
-  map: _cache('map'),
-  forEach: _cache('forEach'),
-  keys:  _cache('keys'),
-};
+const _cache =  require('lodash-magic-cache').lodashFP([
+  'map', 'forEach', 'keys'
+]);
 ```
 
 It's quite simple.
