@@ -31,18 +31,22 @@ const requireLodash = (name) => {
 
 const requireLodashFP = name => requireLodash(`fp/${name}`);
 
+const getMultiple = (modules, fp = false) => _.fromPairs(fp ?
+  _.map(m => [m, requireLodashFP(m)])(modules)
+  : _.map(m => [m, requireLodash(m)])(modules));
+
+const getSingle = (mod, fp = false) => _.fromPairs(fp ?
+  [[mod, requireLodashFP(mod)]]
+  : [[mod, requireLodash(mod)]]);
+
 export default {
   get: (modules, fp = false) => {
     if (_.isArray(modules)) {
-      return _.fromPairs(fp ?
-        _.map(m => [m, requireLodashFP(m)])(modules)
-        : _.map(m => [m, requireLodash(m)])(modules));
+      return getMultiple(modules, fp);
     }
 
     if (_.isString(modules)) {
-      return _.fromPairs(fp ?
-        [[modules, requireLodashFP(modules)]]
-        : [[modules, requireLodash(modules)]]);
+      return getSingle(modules, fp);
     }
 
     throw new TypeError(`Expecting [String] or a String lodash method name(s), instead got ${modules}`);
