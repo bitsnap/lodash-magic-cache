@@ -5,7 +5,6 @@
 [![downloads](https://img.shields.io/npm/dw/lodash-magic-cache.svg)](https://npmjs.org/package/lodash-magic-cache)
 [![CircleCI](https://img.shields.io/circleci/project/github/bitsnap/lodash-magic-cache.svg)](https://circleci.com/gh/bitsnap/lodash-magic-cache)
 [![Coverage Status](https://coveralls.io/repos/github/bitsnap/lodash-magic-cache/badge.svg?branch=master)](https://coveralls.io/github/bitsnap/lodash-magic-cache?branch=master) 
-[![devDependencies](https://david-dm.org/bitsnap/lodash-magic-cache/dev-status.svg)](https://david-dm.org/bitsnap/lodash-magic-cache#info=devDependencies)
 [![Climate](https://img.shields.io/codeclimate/maintainability/bitsnap/lodash-magic-cache.svg)](https://codeclimate.com/github/bitsnap/lodash-magic-cache)
 
 Magic cache 🍒 caches your lodash 📦 at Node.js for you.
