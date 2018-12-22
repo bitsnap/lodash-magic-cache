@@ -31,12 +31,12 @@ const requireLodash = (name) => {
 
 const requireLodashFP = name => requireLodash(`fp/${name}`);
 
-const getMultiple = (modules, fp = false) => _.fromPairs(fp ?
-  _.map(m => [m, requireLodashFP(m)])(modules)
+const getMultiple = (modules, fp = false) => _.fromPairs(fp
+  ? _.map(m => [m, requireLodashFP(m)])(modules)
   : _.map(m => [m, requireLodash(m)])(modules));
 
-const getSingle = (mod, fp = false) => _.fromPairs(fp ?
-  [[mod, requireLodashFP(mod)]]
+const getSingle = (mod, fp = false) => _.fromPairs(fp
+  ? [[mod, requireLodashFP(mod)]]
   : [[mod, requireLodash(mod)]]);
 
 export default {

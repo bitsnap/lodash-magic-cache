@@ -17,7 +17,7 @@ const measurePerformance = (fn) => {
   const obs = new PerformanceObserver((list) => {
     [result] = list.getEntries();
     obs.disconnect();
-    performance.clearFunctions();
+    performance.clearMarks();
   });
 
   obs.observe({ entryTypes: ['function'] });
